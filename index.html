@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style/css.css">
+  <title>Document</title>
+</head>
+
+<body>
+ <div class="top-container">
+  <!-- score -->
+  <div class="score-container">Score:<div class="score">0</div></div>
+  <!-- top dog name stored to local storage -->
+  <div class="top-dog-container">Top dog:<div class="top-dog">put your initials</div></div>
+  <!-- button to start the game show/hide -->
+  <div class="start-btn-container"><button id="start">Start game</button></div>
+ </div>
+  <!-- div for questions taken from array -->
+  <!-- checkboxes to answer and a submit button -->
+
+  <form id="form">
+    <div class="questions-container">
+     <p>Question #<p id="question-number">0</p></p>
+      <div class="question">Question here:</div>
+      <div class="question-checkboxes">
+       <label>A.<input type="radio" name="checkboxes" id="checkbox" value="A"></label></input>
+       <label>B.<input type="radio" name="checkboxes" id="checkbox" value="B"></label></input>
+       <label>C.<input type="radio" name="checkboxes" id="checkbox" value="C"></label></input>
+       <label>D.<input type="radio" name="checkboxes" id="checkbox" value="D"></label></input>
+        <!-- <p class="checkboxes"></p> -->
+    </div>
+      <button onclick="getSelectedRadio()" class="submit">submit</button>
+    </div> 
+  </form>
+
+ <script src="./js/javascript.js"></script>
+</body>
+</html>
